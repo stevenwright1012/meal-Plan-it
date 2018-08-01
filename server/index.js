@@ -5,8 +5,9 @@ const massive = require('massive');
 const session = require('express-session');
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0');
+const con = require('./controller')
 
-const {CONNECTION_URI, SESSION_SECRET, DOMAIN, CLIENT_ID, CLIENT_SECRET, CALLBACK_URL, SUCCESS_REDIRECT, FAILURE_REDIRECT} = process.env
+const {CONNECTION_URI, SESSION_SECRET, DOMAIN, CLIENT_ID, CLIENT_SECRET, CALLBACK_URL, SUCCESS_REDIRECT, FAILURE_REDIRECT, API_ID, API_KEY} = process.env
 
 massive(CONNECTION_URI).then(db => {
     app.set('db', db)
@@ -72,5 +73,9 @@ app.get('/logout', (req, res) => {
     req.logOut();
     res.redirect(FAILURE_REDIRECT)
 })
+
+/////Search endpoints////
+
+app.get('/api/search/:searchterm', con.search)
 
 app.listen(3005, () => console.log('Listening on 3005'))

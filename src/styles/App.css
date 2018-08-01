@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,6 +60,9 @@ a:focus {
 a:hover, a:active {
   text-decoration: none; }
 
+button:focus {
+  outline: 0; }
+
 .Dashboard-container {
   width: 100%;
   background: red; }
@@ -67,12 +73,45 @@ a:hover, a:active {
 
 .Login_Container {
   width: 100%;
-  position: relative; }
+  position: relative;
+  animation: fadein 1s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .Login_Container .login_button {
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 5px;
+    font-size: 1.3em; }
+    .Login_Container .login_button a {
+      text-decoration: underline;
+      color: #F9F871; }
   .Login_Container .welcome {
-    display: flex;
-    justify-content: center;
-    align-content: center; }
+    position: relative;
+    top: 10vh;
+    text-align: center;
+    color: #F9F871;
+    font-family: "Anton", sans-serif;
+    font-size: 3em; }
+    .Login_Container .welcome .login_search {
+      position: relative;
+      top: 10px; }
+      .Login_Container .welcome .login_search .search_input {
+        border: 0;
+        height: 20px;
+        border-radius: 15px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        padding: 5px;
+        outline: 0;
+        font-family: "Anton", sans-serif; }
+      .Login_Container .welcome .login_search .search_button {
+        background: #F9F871;
+        height: 30px;
+        border: 0;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        font-family: "Anton", sans-serif; }
