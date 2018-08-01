@@ -1,0 +1,12 @@
+.Login_Container{
+    width: 100%;
+    position: relative;
+    .login_button{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .welcome{
+        @include center;
+    }
+}

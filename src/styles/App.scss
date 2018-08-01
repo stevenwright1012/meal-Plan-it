@@ -1,1 +1,8 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+@import './reset';
 @import './../styles/Dashboard';
+@import './Login';
