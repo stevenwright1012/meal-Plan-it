@@ -1,7 +1,8 @@
 .Login_Container{
     width: 100%;
+    height: 100vh;
     position: relative;
-    // @include center;
+    @include gradient;
     animation: fadein 1s;
     @keyframes fadein{
         from {opacity: 0;}

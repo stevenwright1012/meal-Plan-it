@@ -8,6 +8,10 @@
     align-content: center;
 }
 
+@mixin gradient{
+    background-image: linear-gradient(to top, #051937, #0c2f5d, #104887, #1062b3, #007de1);
+}
+
 $background: #007DE1;
 $font-color: #F9F871;
 $font-family: 'Anton', sans-serif;

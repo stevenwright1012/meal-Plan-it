@@ -8,11 +8,22 @@
     justify-content: space-between;
     align-content: center;
     font-family: $font-family;
-    .footer_button{
-        margin: 0 4px 0 4px;
-        position: relative; 
-        li{
-            list-style-type: none;
+    a{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer_button{
+            margin: 0 4px 0 4px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            h4{
+                color: rgb(104, 103, 103);
+                margin-top: 10px;
+            }
         }
     }
 }

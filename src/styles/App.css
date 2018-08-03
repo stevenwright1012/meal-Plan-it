@@ -65,11 +65,14 @@ button:focus {
 
 .Dashboard-container {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-image: linear-gradient(to top, #051937, #0c2f5d, #104887, #1062b3, #007de1); }
 
 .Login_Container {
   width: 100%;
+  height: 100vh;
   position: relative;
+  background-image: linear-gradient(to top, #051937, #0c2f5d, #104887, #1062b3, #007de1);
   animation: fadein 1s; }
 
 @keyframes fadein {
@@ -143,8 +146,18 @@ button:focus {
   justify-content: space-between;
   align-content: center;
   font-family: "Anton", sans-serif; }
-  .nav_footer .footer_button {
-    margin: 0 4px 0 4px;
-    position: relative; }
-    .nav_footer .footer_button li {
-      list-style-type: none; }
+  .nav_footer a {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav_footer a .footer_button {
+      margin: 0 4px 0 4px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center; }
+      .nav_footer a .footer_button h4 {
+        color: #686767;
+        margin-top: 10px; }
