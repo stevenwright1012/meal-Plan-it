@@ -33,7 +33,15 @@ class Login extends Component {
       )
     })
     //////////Settings fot slick//////////////
-    let settings = {}
+    let settings = {
+      className:"slider",
+      adaptiveHeight: true,
+      arrows: false,
+      centerMode:true,
+      centerPadding: '10px',
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
     return (
       <div className="Login_Container">
         <p className="login_button">
@@ -51,7 +59,9 @@ class Login extends Component {
           </div>
         </div>
         <div className="recipes">
-          {slides}
+          <Slider {...settings}>
+            {slides}
+          </Slider>
         </div>
       </div>
     );

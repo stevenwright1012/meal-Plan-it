@@ -1,7 +1,7 @@
 .Login_Container{
     width: 100%;
     position: relative;
-    // opacity: 0;
+    // @include center;
     animation: fadein 1s;
     @keyframes fadein{
         from {opacity: 0;}
@@ -47,6 +47,36 @@
                 border-bottom-right-radius: 15px;
                 border-top-right-radius: 15px;
                 font-family: $font-family;
+            }
+        }
+    }
+    .recipes{
+        // background: white;
+        position: relative;
+        top: 100px;
+
+        .slider{
+            // background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slide{
+            // background: blue;
+            // margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $font-color;
+            img{
+                width: 250px;
+                display: block;
+                margin: auto;
+                border: 5px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background: white;
             }
         }
     }

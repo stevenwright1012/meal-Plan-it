@@ -1,0 +1,18 @@
+.nav_footer{
+    height: 50px;
+    width: 100vw; 
+    position: absolute;
+    bottom: 0;
+    background: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: $font-family;
+    .footer_button{
+        margin: 0 4px 0 4px;
+        position: relative; 
+        li{
+            list-style-type: none;
+        }
+    }
+}

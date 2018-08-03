@@ -65,11 +65,7 @@ button:focus {
 
 .Dashboard-container {
   width: 100%;
-  background: red; }
-  .Dashboard-container .test {
-    height: 10px;
-    width: 10px;
-    background: green; }
+  height: 100vh; }
 
 .Login_Container {
   width: 100%;
@@ -115,3 +111,40 @@ button:focus {
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         font-family: "Anton", sans-serif; }
+  .Login_Container .recipes {
+    position: relative;
+    top: 100px; }
+    .Login_Container .recipes .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .Login_Container .recipes .slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #F9F871; }
+      .Login_Container .recipes .slide img {
+        width: 250px;
+        display: block;
+        margin: auto;
+        border: 5px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background: white; }
+
+.nav_footer {
+  height: 50px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  background: gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-family: "Anton", sans-serif; }
+  .nav_footer .footer_button {
+    margin: 0 4px 0 4px;
+    position: relative; }
+    .nav_footer .footer_button li {
+      list-style-type: none; }
