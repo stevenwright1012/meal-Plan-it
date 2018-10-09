@@ -32,7 +32,7 @@ class Login extends Component {
         </div>
       )
     })
-    //////////Settings fot slick//////////////
+    //////////Settings for slick//////////////
     let settings = {
       className:"slider",
       adaptiveHeight: true,
